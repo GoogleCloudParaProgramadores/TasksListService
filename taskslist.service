@@ -1,0 +1,12 @@
+[Unit]
+Description=Tasks List Rest Service
+After=syslog.target
+
+[Service]
+SyslogIdentifier=TasksListService
+ExecStart=/home/taskslistuser/TasksListService-1.0.jar
+User=taskslistuser
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
