@@ -17,14 +17,14 @@ public class TaskController {
 
     private ITaskDAO taskDAO;
 
-    public TaskController(){
-        try {
+    public TaskController() throws Exception{
+        //try {
             TaskDAOFactory taskDAOFactory = new TaskDAOFactory();
             taskDAO = taskDAOFactory.getDataBase();
 
-        } catch (Exception e) {
-            log.debug(e.getMessage());
-        }
+        //} catch (Exception e) {
+        //    log.debug(e.getMessage());
+        //}
     }
 
     @RequestMapping(value = "/tasks", method=RequestMethod.GET)
@@ -53,5 +53,10 @@ public class TaskController {
     public Task deleteTask(@RequestBody Task task) throws SQLException {
         this.taskDAO.remove(task);
         return new Task();
+    }
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String testTask(){
+        return "Tasks List Service Test OK";
     }
 }
