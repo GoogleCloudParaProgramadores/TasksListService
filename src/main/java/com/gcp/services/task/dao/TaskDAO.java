@@ -1,6 +1,7 @@
 package com.gcp.services.task.dao;
 
 import com.gcp.services.task.model.Task;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.text.ParseException;

@@ -1,45 +1,47 @@
 package com.gcp.services.task.dao;
 
-import com.gcp.services.util.DAOUtil;
-
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.sql.SQLException;
 
+@Component
 public class TaskDAOFactory {
-    private DAOUtil daoUtil = null;
+    private static Logger log = Logger.getLogger(TaskDAOFactory.class.getName());
 
-    public TaskDAOFactory(){
-        this.daoUtil = new DAOUtil();
-    }
+    @Autowired
+    private DAOUtil daoUtil;
 
-    public TaskDAOFactory(DAOUtil daoUtil){
-        this.daoUtil = daoUtil;
-    }
+    private ITaskDAO taskDAO;
 
     public ITaskDAO getDataBase() throws Exception {
-        ITaskDAO taskDAO = null;
+        log.debug("TASK LIST DBMS: " + daoUtil.getDbms());
+        if(taskDAO == null) {
+            if(daoUtil.getDbms().toLowerCase().equals("mysql")) {
+                taskDAO = createMySQLTaskDAO();
+            }
 
-        String serverName = daoUtil.getServerName();
-
-        if(serverName.toLowerCase().equals("sqlite")) {
-            taskDAO = createSQLiteTaskDAO();
-        }
-
-        if(serverName.toLowerCase().equals("mysql")){
-            taskDAO = createMySQLTaskDAO();
+            if(daoUtil.getDbms().toLowerCase().equals("sqlite")) {
+                taskDAO = createSQLiteTaskDAO();
+            }
         }
 
         return taskDAO;
     }
 
-    public TaskDAO createSQLiteTaskDAO() throws SQLException, ClassNotFoundException, IOException {
+    private TaskDAO createMySQLTaskDAO() throws SQLException, ClassNotFoundException, IOException {
+        return new TaskDAO(daoUtil.connectToMysql());
+    }
+
+    private TaskDAO createSQLiteTaskDAO() throws SQLException, ClassNotFoundException, IOException {
         TaskDAO taskDAO = new TaskDAO(daoUtil.connectToSQLite());
         taskDAO.createDatabase();
 
         return taskDAO;
     }
 
-    public TaskDAO createMySQLTaskDAO() throws SQLException, ClassNotFoundException, IOException {
-        return new TaskDAO(daoUtil.connectToMysql());
+    public DAOUtil getDaoUtil(){
+        return daoUtil;
     }
 }

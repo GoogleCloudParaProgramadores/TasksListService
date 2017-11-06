@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bea4f6f8-9c0f-4378-b67d-c8094ba4b88f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_apis_google_api_services_sqladmin_v1beta4_rev25_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_sql_jdbc_socket_factory_core_1_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_sql_mysql_socket_factory_1_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_jdk5_17_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_8.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/MySQLTaskDAOTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gcp/services/util/DAOUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/DAOUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TasksListService.iml" afterPath="$PROJECT_DIR$/TasksListService.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/SecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/Service.java" afterPath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/Service.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/controller/TaskController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/SQLiteTaskDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/SQLiteTaskDAOTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/TaskDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/TaskDAOTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="27">
+              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -57,6 +55,10 @@
       <find>security-config</find>
       <find>SECURITY-CONFIG</find>
       <find>cors</find>
+      <find>mysql</find>
+      <find>instance</find>
+      <find>google</find>
+      <find>sqlite</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,29 +82,42 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/responses/StandardResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/responses/StatusResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/model/ApiError.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/exceptions/TasksExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/error/ApiError.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/controller/Autowire.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/util/ConfigProperties.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gcp/services/task/model/TaskTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/MySQLTaskDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/SQLiteTaskDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/TaskDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/model/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/auth0.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/ServiceConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/util/DAOUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/service.log" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/util/DAOUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/controller/TaskController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-prop.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/DAOUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/SQLiteTaskDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-test.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/TaskDAOTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/service.log" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="local" />
       </list>
     </option>
   </component>
@@ -111,12 +126,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="TasksListService" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="TasksListService" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
         </path>
       </expand>
       <select />
@@ -144,6 +154,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,10 +186,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,12 +194,21 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.10294118" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TasksListApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.gcp.services.task.controller" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.gcp.services.task" />
+      <recent name="com.gcp.services.task.dao" />
       <recent name="com.gcp.services" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gcp.services.task.model" />
+      <recent name="com.gcp.services.task.helper" />
+      <recent name="com.gcp.services.task.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\sandbox\KEstudos\TasksListService\src\main\java\com\gcp\services" />
@@ -197,14 +216,6 @@
       <recent name="C:\sandbox\KEstudos\TasksListService\src\main\resources" />
       <recent name="C:\sandbox\KEstudos\TasksListService\src\main\java\com\gcp\services\task\dao" />
       <recent name="C:\sandbox\KEstudos\TasksListService\src\main\java\com\gcp\services\util" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gcp.services.task.model" />
-      <recent name="com.gcp.services.task.helper" />
-      <recent name="com.gcp.services.task.controller" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.gcp.services.task.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -219,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MySQLTaskDAOTest">
+  <component name="RunManager" selected="JAR Application.TasksListServiceJAR">
     <configuration name="MySQLTaskDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -245,15 +256,37 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="SQLiteTaskDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gcp.services.task.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TasksListService" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gcp.services.task.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.gcp.services.task.dao.SQLiteTaskDAOTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="TasksListServiceJAR" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/TasksListService-1.0.jar" />
       <option name="WORKING_DIRECTORY" value="C:\sandbox\KEstudos\TasksListService" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
-      <method>
-        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
-      </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -336,13 +369,15 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JAR Application.TasksListServiceJAR" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MySQLTaskDAOTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SQLiteTaskDAOTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MySQLTaskDAOTest" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SQLiteTaskDAOTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MySQLTaskDAOTest" />
       </list>
     </recent_temporary>
   </component>
@@ -360,36 +395,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 29m 41s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 45m 12s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 32m 46s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 49m 06s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 34m 22s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 49m 29s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 36m 01s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 52m 42s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 38m 56s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 53m 11s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 45m 36s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 53m 31s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 47m 02s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 53m 54s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 51m 19s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 54m 20s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 16h 59m 47s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 16h 55m 28s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySQLTaskDAOTest - 2017.11.01 at 17h 01m 59s.xml">
-      <configuration name="MySQLTaskDAOTest" configurationId="JUnit" />
+    <history-entry file="SQLiteTaskDAOTest - 2017.11.05 at 17h 05m 43s.xml">
+      <configuration name="SQLiteTaskDAOTest" configurationId="JUnit" />
     </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -397,30 +441,30 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11546724" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272727" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1970999" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40681818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19280344" sideWeight="0.49545455" order="0" side_tool="false" content_ui="combo" x="67" y="107" width="385" height="632" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19548872" sideWeight="0.49545455" order="0" side_tool="false" content_ui="combo" x="67" y="107" width="385" height="632" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24772727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25349087" sideWeight="0.50454545" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21363637" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -431,51 +475,64 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/controller/TaskController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#TaskController#0;class#TaskController#0" expanded="false" />
+            <element signature="n#parent#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#exclusions#0;n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#repositories#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#pluginRepositories#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="297">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="783">
+          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#createMySQLTaskDAO#0;class#TaskDAOFactory#0" expanded="false" />
+            <element signature="method#corsConfigurationSource#0;class#SecurityConfig#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/util/DAOUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/DAOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="13" column="95" lean-forward="false" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#connectToMysql#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#connectToSQLite#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#clean#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#close#0;class#DAOUtil#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -484,16 +541,13 @@
         <state relative-caret-position="486">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#parent#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#exclusions#0;n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#repositories#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#pluginRepositories#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#pluginRepository#0;n#pluginRepositories#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -502,33 +556,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="method#TaskController#0;class#TaskController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19575">
-          <caret line="725" column="0" lean-forward="true" selection-start-line="725" selection-start-column="0" selection-end-line="725" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/service.log" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#createDatabase#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#save#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#fetchByID#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#update#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#remove#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#filter#0;class#TaskDAO#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,10 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#createMySQLTaskDAO#0;class#TaskDAOFactory#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,17 +582,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/util/ConfigProperties.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/util/DAOUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/DAOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#connectToMysql#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#connectToSQLite#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#clean#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#close#0;class#DAOUtil#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -570,16 +594,13 @@
         <state relative-caret-position="702">
           <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#parent#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#exclusions#0;n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#repositories#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#pluginRepositories#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#pluginRepository#0;n#pluginRepositories#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -615,25 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="1043" column="12" lean-forward="false" selection-start-line="1043" selection-start-column="12" selection-end-line="1043" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/model/TaskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/SQLiteTaskDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,7 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,15 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -665,93 +657,140 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="method#main#0;class#Service#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/ServiceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/ServiceConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/callback" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/MySQLTaskDAOTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/auth0.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-          <folding />
+          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/TaskDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/application.properties" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/SQLiteTaskDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="method#createTask#0;class#TaskDAOTest#0" expanded="false" />
-            <element signature="method#fetchTaskByID#0;class#TaskDAOTest#0" expanded="false" />
-            <element signature="method#updateTask#0;class#TaskDAOTest#0" expanded="false" />
-            <element signature="method#removeTask#0;class#TaskDAOTest#0" expanded="false" />
-            <element signature="method#listTasks#0;class#TaskDAOTest#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="351">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/model/TaskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="325">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/DAOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/TaskDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
-            <element signature="method#createDatabase#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#fetchByID#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#update#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#remove#0;class#TaskDAO#0" expanded="false" />
-            <element signature="method#filter#0;class#TaskDAO#0" expanded="false" />
+            <element signature="method#corsConfigurationSource#0;class#SecurityConfig#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9248">
-          <caret line="21718" column="0" lean-forward="false" selection-start-line="21718" selection-start-column="0" selection-end-line="21718" selection-end-column="27" />
+        <state relative-caret-position="179">
+          <caret line="620" column="14290" lean-forward="false" selection-start-line="620" selection-start-column="14284" selection-end-line="620" selection-end-column="14290" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-cloud.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="108" column="43" lean-forward="false" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
+          <folding>
+            <element signature="n#parent#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#exclusions#0;n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#repositories#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#pluginRepositories#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/controller/TaskController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="method#TaskController#0;class#TaskController#0" expanded="false" />
-            <element signature="method#fetchTaskByID#0;class#TaskController#0" expanded="false" />
-            <element signature="method#createTask#0;class#TaskController#0" expanded="false" />
-            <element signature="method#updateTask#0;class#TaskController#0" expanded="false" />
-            <element signature="method#deleteTask#0;class#TaskController#0" expanded="false" />
-            <element signature="e#2040#2041#0" expanded="false" />
-            <element signature="e#2091#2092#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callback">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getDataBase#0;class#TaskDAOFactory#0" expanded="false" />
+            <element signature="method#createMySQLTaskDAO#0;class#TaskDAOFactory#0" expanded="false" />
+            <element signature="method#createSQLiteTaskDAO#0;class#TaskDAOFactory#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -763,72 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#785#803#0" expanded="false" />
-            <element signature="method#configure#0;class#SecurityConfig#0" expanded="false" />
-            <element signature="method#corsConfigurationSource#0;class#SecurityConfig#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="81" column="65" lean-forward="false" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
-          <folding>
-            <element signature="n#exclusions#0;n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#repositories#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/task/dao/TaskDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-          <folding>
-            <element signature="method#createSQLiteTaskDAO#0;class#TaskDAOFactory#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gcp/services/task/dao/MySQLTaskDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/services/util/DAOUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="method#getServerName#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#connectToSQLite#0;class#DAOUtil#0" expanded="false" />
-            <element signature="method#clean#0;class#DAOUtil#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state relative-caret-position="27">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
           <folding />
         </state>
       </provider>

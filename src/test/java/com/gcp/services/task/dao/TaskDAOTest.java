@@ -1,13 +1,21 @@
 package com.gcp.services.task.dao;
 
 import com.gcp.services.task.model.Task;
-import org.junit.Test;
 
 import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
+import org.springframework.test.context.junit4.SpringRunner;
 
+
+@TestPropertySource(locations="classpath:application-local.properties")
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public abstract class TaskDAOTest {
     static ITaskDAO taskDAO = null;
 

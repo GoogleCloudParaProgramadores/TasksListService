@@ -1,29 +1,24 @@
 package com.gcp.services.task.dao;
 
-import com.gcp.services.util.DAOUtil;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import java.io.IOException;
 import java.sql.SQLException;
 
 public class SQLiteTaskDAOTest extends TaskDAOTest {
-    private static DAOUtil daoUtil;
 
-    @BeforeClass
-    public static void setupClass(){
-        daoUtil = new DAOUtil();
-    }
+    @Autowired
+    private TaskDAOFactory taskDAOFactory;
 
     @Before
-    public void setup() throws SQLException, IOException, ClassNotFoundException {
-        TaskDAOFactory taskDAOFactory = new TaskDAOFactory(daoUtil);
-        taskDAO = taskDAOFactory.createSQLiteTaskDAO();
+    public void setup() throws Exception {
+        taskDAO = taskDAOFactory.getDataBase();
     }
 
     @After
     public void tearDown() throws SQLException {
-        daoUtil.close();
+        taskDAOFactory.getDaoUtil().clean();
     }
 }

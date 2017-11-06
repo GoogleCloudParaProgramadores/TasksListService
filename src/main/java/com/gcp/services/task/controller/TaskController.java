@@ -4,11 +4,10 @@ import com.gcp.services.task.dao.ITaskDAO;
 import com.gcp.services.task.dao.TaskDAOFactory;
 import com.gcp.services.task.model.Task;
 
-import java.sql.SQLException;
-import java.text.ParseException;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,46 +16,47 @@ public class TaskController {
 
     private ITaskDAO taskDAO;
 
-    public TaskController() throws Exception{
-        //try {
-            TaskDAOFactory taskDAOFactory = new TaskDAOFactory();
-            taskDAO = taskDAOFactory.getDataBase();
-
-        //} catch (Exception e) {
-        //    log.debug(e.getMessage());
-        //}
-    }
+    @Autowired
+    private TaskDAOFactory taskDAOFactory;
 
     @RequestMapping(value = "/tasks", method=RequestMethod.GET)
-    public List<Task> filterTasks(@RequestParam(value="query", defaultValue="", required=false) String query, @RequestParam(value="status", defaultValue="-1", required=false) int status) throws ParseException, SQLException {
-        return this.taskDAO.filter(query, status);
+    public List<Task> filterTasks(
+            @RequestParam(value="query", defaultValue="", required=false) String query,
+            @RequestParam(value="status", defaultValue="-1", required=false) int status) throws Exception {
+        taskDAO = taskDAOFactory.getDataBase();
+        return taskDAO.filter(query, status);
     }
 
     @RequestMapping(value = "/tasks/{id}", method = RequestMethod.GET)
-    public Task fetchTaskByID(@PathVariable("id") int ID) throws ParseException, SQLException{
+    public Task fetchTaskByID(@PathVariable("id") int ID) throws Exception {
+        taskDAO = taskDAOFactory.getDataBase();
         return this.taskDAO.fetchByID(ID);
     }
 
     @RequestMapping(value = "/tasks", method = RequestMethod.POST)
-    public Task createTask(@RequestBody Task task) throws SQLException{
+    public Task createTask(@RequestBody Task task) throws Exception {
+        taskDAO = taskDAOFactory.getDataBase();
         taskDAO.save(task);
         return task;
     }
 
     @RequestMapping(value = "/tasks", method = RequestMethod.PUT)
-    public Task updateTask(@RequestBody Task task) throws SQLException{
+    public Task updateTask(@RequestBody Task task) throws Exception {
+        taskDAO = taskDAOFactory.getDataBase();
         taskDAO.update(task);
         return task;
     }
 
     @RequestMapping(value = "/tasks", method = RequestMethod.DELETE)
-    public Task deleteTask(@RequestBody Task task) throws SQLException {
-        this.taskDAO.remove(task);
+    public Task deleteTask(@RequestBody Task task) throws Exception {
+        taskDAO = taskDAOFactory.getDataBase();
+        taskDAO.remove(task);
         return new Task();
     }
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public String testTask(){
-        return "Tasks List Service Test OK";
+    @RequestMapping(value = "/ishealth", method = RequestMethod.GET)
+    public String isHealth() {
+        log.debug("TASKS LIST SERVICE IS HEALTH");
+        return "ok";
     }
 }
